@@ -1,7 +1,7 @@
 import 'dart:html';
+import 'dart:math' as math;
 
 import 'package:angular/angular.dart';
-import 'dart:math' as math;
 import 'package:qr/qr.dart';
 
 
@@ -70,7 +70,7 @@ class QrCodeComponent implements AfterViewInit {
       }
     }
 
-    CanvasElement canvas = _element.querySelector("canvas#qrcontent");
+    CanvasElement canvas = _element.querySelector("canvas#qrcontent") as CanvasElement;
 
     final ctx = canvas.context2D;
 
@@ -105,6 +105,4 @@ class QrCodeComponent implements AfterViewInit {
   void ngAfterViewInit() {
     drawQrCode();
   }
-
-
 }

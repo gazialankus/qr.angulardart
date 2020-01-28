@@ -8,6 +8,7 @@ environment:
   sdk: '>=2.6.0 <3.0.0'
 
 dependencies:
+  angular: ^6.0.0-alpha
   meta: ^1.1.0
   qr: ^1.2.0
 
