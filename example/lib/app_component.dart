@@ -1,6 +1,5 @@
 import 'package:angular/angular.dart';
-
-import 'qr_code_component.dart';
+import 'package:qr_angulardart/qr_angulardart.dart';
 
 @Component(
   selector: 'my-app',
